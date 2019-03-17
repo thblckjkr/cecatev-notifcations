@@ -1,0 +1,24 @@
+{
+  "name": "cecatev-notifcations",
+  "version": "0.0.1",
+  "description": "Proyect to make telegram notifications",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thblckjkr/cecatev-notifcations.git"
+  },
+  "author": "Teo GC [@thblckjkr]",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thblckjkr/cecatev-notifcations/issues"
+  },
+  "homepage": "https://github.com/thblckjkr/cecatev-notifcations#readme",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "request": "^2.88.0",
+    "telebot": "^1.2.6"
+  }
+}
