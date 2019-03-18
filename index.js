@@ -1,7 +1,7 @@
 const fs = require('fs')
 const TeleBot = require('telebot');
 
-const ui = require('./app/ui')
+const worker = require('./app/worker')
 const scrapper = require('./app/scrapper')
 
 // Load configuration from file
@@ -10,8 +10,8 @@ var config = JSON.parse(
 );
 
 const bot = new TeleBot(config.key);
-ux = new ui(bot); // Crete necessary triggers
+w = new worker(bot); // Crete necessary triggers
+bot.start();
 
-scrapper
-
-// bot.start();
+s = new scrapper(w)
+s.init()
